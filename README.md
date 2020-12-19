@@ -14,5 +14,5 @@ Allows you to quickly login using multiple accounts in League of Legends
 After running the vbs file, you should be able to select which account you want to log into. 
 * *PLEASE Don't switch to other programs before auto logging in! It also doesnt account for updates (the ones where update isnt prompted in client). So if the client is updating, try it again or wait for it to finish updating before logging in!* 
 
-* *ALL ACCOUNT DATA ARE STORED LOCALLY AND SENT TO RIOT ONLY**
+* *ALL ACCOUNT DATA ARE STORED LOCALLY AND SENT TO RIOT ONLY*
 
