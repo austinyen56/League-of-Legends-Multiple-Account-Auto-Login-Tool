@@ -11,6 +11,6 @@ Allows you to quickly login using multiple accounts
 7. Optional: For those who have slower client boot times, change ```WScript.Sleep 10``` to a different value Ex: WScript.Sleep 1000
 (Number in milliseconds)
 
-After running the vbs file, you should be able to select which account you want to log into
-*PLEASE Don't switch to other programs before auto logging in! It also doesnt account for updates (the ones where update isnt prompted in client) so if the client is updating, wait for it to finish updating before logging in!
+After running the vbs file, you should be able to select which account you want to log into. \
+* *PLEASE Don't switch to other programs before auto logging in! It also doesnt account for updates (the ones where update isnt prompted in client) so if the client is updating, wait for it to finish updating before logging in!*
 
