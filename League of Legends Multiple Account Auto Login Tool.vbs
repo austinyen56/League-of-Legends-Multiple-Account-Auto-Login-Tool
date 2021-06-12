@@ -11,7 +11,7 @@ For Each Process In Service.InstancesOf("Win32_Process")
 Next
 
 
-account=InputBox("League of Legends Multiple Account Auto Login Tool v1.0 by Austin56" & vbCrLf & vbCrLf & "Select main or smurf (1 for main, 2 for smurf, 3 for another smurf, pbe for PBE):")
+account=InputBox("League of Legends Multiple Account Auto Login Tool v1.1 by Austin56" & vbCrLf & vbCrLf & "Select main or smurf (1 for main, 2 for smurf, 3 for another smurf, pbe for PBE):")
 'Wscript.Echo "Print to terminal"
 if account = "1"   Then
     Eval(Main)
@@ -22,12 +22,14 @@ ElseIf account = "3" Then
 ElseIf account = "pbe"  Then
     Eval(Pbe)
 End if
+
 Function Main()                                                         'Change for main account
     set oExec = script.Exec("C:\League of Legends\LeagueClient.exe")
     Do
         WScript.Sleep 10
     Loop Until oExec.Status = 1
-    'wscript.sleep 5000
+    script.AppActivate "Riot Client"
+    WScript.Sleep 5000
     script.sendkeys "Put your username here"
     script.sendkeys "{TAB}"
     script.sendkeys "Put your password here"
@@ -39,6 +41,8 @@ Function Alt()                                                          'Change 
     Do
         WScript.Sleep 10
     Loop Until oExec.Status = 1
+    script.AppActivate "Riot Client"
+    WScript.Sleep 5000
     script.sendkeys "Put your username here"
     script.sendkeys "{TAB}"
     script.sendkeys "Put your password here"
@@ -50,6 +54,8 @@ Function Kiwi()                                                         'Change 
     Do
         WScript.Sleep 100
     Loop Until oExec.Status = 1
+    script.AppActivate "Riot Client"
+    WScript.Sleep 5000
     script.sendkeys "Put your username here"
     script.sendkeys "{TAB}"
     script.sendkeys "Put your password here"
@@ -61,8 +67,12 @@ Function Pbe()                                                          'Change 
     Do
         WScript.Sleep 100
     Loop Until oExec.Status = 1
+    script.AppActivate "Riot Client"
+    WScript.Sleep 5000
     script.sendkeys "Put your username here"
     script.sendkeys "{TAB}"
     script.sendkeys "Put your password here"
     script.sendkeys "{ENTER}"
 End Function
+
+'If you have more accounts, just add more functions and be sure to add more conditions in line 23/24
