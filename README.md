@@ -1,18 +1,11 @@
-# League of Legends Multiple Account Auto Login Tool
-Allows you to quickly login using multiple accounts in League of Legends
+# League of Legends Wincon Calculator
+Wanna predict if you will win or not in your current game of league? This program will show ur wr and enable you to climb faster (hopefully)
 
-## How to use this file
-1. Download the vbs file
-2. Right click and edit the file
-3. At the line ```set oExec = script.Exec("Your League directory\LeagueClient.exe") ``` replace and change it to your directory for LeagueClient.exe  Ex: C:\League of Legends\LeagueClient.exe
-4. For lines that have ```script.sendkeys "Put your username here"``` replace it with your username
-5. For lines that have ```script.sendkeys "Put your password here"``` replace it with your password
-6. If you have additional accounts, change it below as well.
-7. Optional: For those who have slower client boot times, change ```WScript.Sleep 10``` to a different value Ex: WScript.Sleep 1000
-(Number in milliseconds)
+## How to run this program
+* You can  run the program using the .exe file presented in the releases, just simply download and double click
+* You can also run the python file by ```python3 RitoWinconCalculator.py```
 
-After running the vbs file, you should be able to select which account you want to log into. 
-* *PLEASE Don't switch to other programs before auto logging in! It also doesnt account for updates (the ones where update isnt prompted in client). So if the client is updating, try it again or wait for it to finish updating before logging in!* 
+## How to use this program
+* The given input statements are pretty self explanatory. Please enter champion names all connected and without spaces. Eg: type "Kha' Zix" as "khazix", "Dr. Mundo" as "drmundo"
 
-* *ALL ACCOUNT DATA ARE STORED LOCALLY AND SENT TO RIOT ONLY*
-
+If there are any errors or bugs, please post an issue and I will respond asap.
