@@ -1,4 +1,6 @@
 # League of Legends Multiple Account Auto Login Tool
+![GitHub](https://img.shields.io/badge/license-MIT-green) ![GitHub](https://img.shields.io/badge/language-VBScript-blue)
+
 Allows you to quickly login using multiple accounts in League of Legends
 
 ## How to use this file
